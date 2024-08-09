@@ -9,9 +9,13 @@ public class Main {
         int d;
 
         if (a <= b && a <= c) {d = a;}
-        else if(a <= b && a >= c) {d = c;}
+        else if (a <= b && a >= c) {d = c;}
+        else if (a >= b && a >= c) {
+            if (b >= c) {d = c;}
+            else {d = b;}
+        }
         else {d = b;}
-        System.out.println(d);
 
+        System.out.println(d);
     }
 }
