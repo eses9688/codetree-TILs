@@ -8,8 +8,8 @@ public class Main {
         int c = s.nextInt();
         int d;
 
-        if (a < b && a < c) {d = a;}
-        else if(a < b && a > c) {d = c;}
+        if (a <= b && a <= c) {d = a;}
+        else if(a <= b && a >= c) {d = c;}
         else {d = b;}
         System.out.println(d);
 
