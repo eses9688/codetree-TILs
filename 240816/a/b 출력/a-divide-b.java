@@ -6,6 +6,5 @@ public class Main {
         int a = s.nextInt();
         int b = s.nextInt();
         System.out.printf("%.20f", (double)a/b);
-
     }
 }
