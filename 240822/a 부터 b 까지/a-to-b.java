@@ -15,7 +15,9 @@ public class Main {
             else {
                 i += 3;
             }
-            System.out.print(i+" ");
+            if (i < b) {
+                System.out.print(i+" ");
+            }
         }
 
     }
