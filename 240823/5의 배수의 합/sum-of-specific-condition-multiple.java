@@ -11,7 +11,7 @@ public class Main {
         if (a > b) {
             t = a;
             a = b;
-            b = a;
+            b = t;
         }
 
         for (int i = a; i <= b; i++) {
