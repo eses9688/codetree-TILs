@@ -12,11 +12,8 @@ public class Main {
                 System.out.printf("%.2f", (double)sum/cnt);
                 break;
             }
-            else {
-                sum += n;
-                cnt++;
-            }
+            sum += n;
+            cnt++;
         }
-
     }
 }
