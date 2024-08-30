@@ -5,6 +5,7 @@ public class Main {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int cnt = 0;
+        
         while (true) {
             if (n % 2 == 0) {
                 n /= 2;
