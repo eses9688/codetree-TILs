@@ -8,13 +8,13 @@ public class Main {
 
         while (true) {
             int n = s.nextInt();
-            if (n >= 30) {     
-                break;
-            }
-            else {
+            if (n >= 20 && n < 30) {     
                 sum += n;
                 cnt++;
                 continue;
+            }
+            else {
+                break;
             }
         }
         System.out.printf("%.2f", (double)sum/cnt);
