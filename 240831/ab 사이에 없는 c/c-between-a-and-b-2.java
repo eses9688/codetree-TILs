@@ -13,7 +13,7 @@ public class Main {
                 satisfied = false;
             }
         }
-        if (satisfied = false) {
+        if (satisfied = true) {
             System.out.println("YES");
         }
         else {
