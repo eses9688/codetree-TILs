@@ -5,18 +5,19 @@ public class Main {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int cnt = 0;
-        
+
         while (true) {
+            if (n == 1) {
+                break;
+            }
             if (n % 2 == 0) {
                 n /= 2;
                 cnt++;
-                if (n == 1) break;
             }
             else {
                 n *= 3;
                 n += 1;
                 cnt++;
-                if (n == 1) break;
             }
         }
         System.out.println(cnt);
