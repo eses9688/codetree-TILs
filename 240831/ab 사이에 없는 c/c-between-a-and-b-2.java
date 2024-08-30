@@ -6,14 +6,14 @@ public class Main {
         int a = s.nextInt();
         int b = s.nextInt();
         int c = s.nextInt();
-        boolean satisfied = true;
+        boolean satisfied = false;
         
         for (int i = a; i <= b; i++) {
             if (i % c == 0) {
-                satisfied = false;
+                satisfied = true;
             }
         }
-        if (satisfied = true) {
+        if (satisfied = false) {
             System.out.println("YES");
         }
         else {
