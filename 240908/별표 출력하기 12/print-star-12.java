@@ -7,13 +7,14 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (i > 0 && j % 2 == 0) {
-                    System.out.print("v ");
+                if ((i > 0 && j % 2 == 0) || j < i) {
+                    System.out.print("  ");
                 }
                 else if (i == 0 || (j % 2 == 1)) {
-                    System.out.println("* ");
+                    System.out.print("* ");
                 }
             }
+            System.out.println();
         }
     }
 }
