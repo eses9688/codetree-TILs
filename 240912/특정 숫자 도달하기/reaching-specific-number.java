@@ -22,7 +22,7 @@ public class Main {
         }
         else {
             System.out.print(sum + " ");
-            System.out.printf("%.2f", (double) sum / 10);
+            System.out.printf("%.1f", (double) sum / 10);
 
         }
 
