@@ -13,6 +13,9 @@ public class Main {
                 cnt = i;
                 break;
             }
+            else {
+                cnt = 10;
+            }
         }
         for (int i = cnt; i > 0; i--) {
             System.out.print(arr[i - 1] + " ");
