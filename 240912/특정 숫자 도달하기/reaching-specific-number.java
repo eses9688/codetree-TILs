@@ -17,10 +17,12 @@ public class Main {
             }
         }        
         if (aver != 0) {
-            System.out.println(sum + " " + aver);
+            System.out.print(sum + " ");
+            System.out.printf("%.1f", aver);
         }
         else {
-            System.out.println(sum + " " + (double) sum / 10);
+            System.out.print(sum + " ");
+            System.out.printf("%.2f", (double) sum / 10);
 
         }
 
