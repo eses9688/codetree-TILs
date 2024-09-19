@@ -6,13 +6,15 @@ public class Main {
         int[] arr = new int[10];
         int sum = 0;
         int t = 0;
+        int i = 0;
 
-        for (int i = 0; i < 10; i++) {
+        while (true) {
             arr[i] = s.nextInt();
             if (arr[i] == 0) {
                 t = i;
                 break;
             }
+            i++;
         }
         sum = arr[t - 1] + arr[t - 2] + arr[t - 3];
         System.out.println(sum);
