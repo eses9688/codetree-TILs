@@ -7,7 +7,7 @@ public class Main {
         int sum = 0;
         int t = 0;
 
-        for (int i = 0; i < 201; i++) {
+        for (int i = 0; i < 100; i++) {
             arr[i] = s.nextInt();
             if (arr[i] == 0) {
                 t = i;
