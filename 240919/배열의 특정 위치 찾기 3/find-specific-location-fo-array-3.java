@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int[] arr = new int[10];
+        int[] arr = new int[100];
         int sum = 0;
         int t = 0;
 
