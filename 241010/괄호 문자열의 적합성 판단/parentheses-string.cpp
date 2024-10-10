@@ -4,6 +4,7 @@ using namespace std;
 
 int main() {
     stack<string> s;    // 빈 스택 추가
+    string answer = "";
     string str;         // str 배열 입력받음
     cin >> str;
     for (int i = 0; i< str.size(); i++) {
@@ -12,18 +13,21 @@ int main() {
         }
         else {                  // '('가 없는 경우 = ')'인 경우
             if (s.empty() == true) {    // 스택이 비어 있는 경우
-                cout << "No";
+                answer = "No";
                 break;           // No 출력
             }
             s.pop();            // 
         }
     }
-    if (s.empty() == false) {
-        cout << "No";
+    if (answer == "") {
+        if (s.empty() == false) {
+            answer = "No";
+        }
+        else{
+            answer = "Yes";
+        }
     }
-    else{
-        cout << "Yes";
-    }
+    cout << answer;
 
     return 0;
 }
