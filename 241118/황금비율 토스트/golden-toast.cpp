@@ -5,8 +5,8 @@ using namespace std;
 int main() {
     list<char> l; // 빈 리스트 선언
     list<char>::iterator it;
-    it = l.end(); // 모든 빵의 맨 마지막을 가리킴
-    it++;
+    it = l.end(); // 모든 빵의 맨 마지막에서 앞을 가리킴
+    it++; // 모든 빵의 맨 마지막으로 이동
     int n, m;
     char order, r, a;
     cin >> n; // 식빵의 개수 입력
@@ -27,15 +27,15 @@ int main() {
             it++;
         }
         else if(r == 'D'){ // 가리키는 위치의 뒤의 빵을 제거
-            it++;
-            it = l.erase(it);
+            it = l.erase(it); // 제거
         }
         else if(r == 'P'){ // 가리키는 위치에 식빵 삽입
             cin >> a ; // 문자를 입력 받아서 a에 저장
             it = l.insert(it, a); // 입력받은 문자를 추가함
+            it++;
         }
     }
-
+    // 출력
     for(it = l.begin(); it != l.end(); it++){
         cout << *it;
     }
