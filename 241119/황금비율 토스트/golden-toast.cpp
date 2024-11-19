@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     list<char> l; // 빈 리스트 선언
     list<char>::iterator it; // iterator 선언
-    it = l.end(); // 모든 빵의 맨 마지막에서 앞을 가리킴
+    it = l.end(); // 모든 빵의 맨 마지막 다음 위치를 가리킴
     int n, m;
     char order, r, a;
     cin >> n; // 식빵의 개수 입력
@@ -21,7 +21,7 @@ int main() {
         }
         else if(r == 'R'){ // 가리키는 위치를 하나 뒤로 이동
             if(it == l.end()){ // 이미 맨 뒤라면 무시
-                break;
+                continue;
             }
             it++;
         }
